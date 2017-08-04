@@ -3,7 +3,7 @@
 //create project
 
 ```
-$ git clone git@github.com:Natasha08/ruby.git
+$ git clone git@github.com:Natasha08/ruby-testing-starter.git
 ```
 
 // If rvm is not installed

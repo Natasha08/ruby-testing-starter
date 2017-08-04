@@ -2,18 +2,9 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
-# RSpec for testing
-gem 'rspec', '~> 3.0'
-gem 'rails-controller-testing'
-# capybara
-gem 'capybara'
-#devise
-gem 'devise'
-#factory_girl
-gem "factory_girl_rails", "~> 4.0"
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -31,8 +22,6 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-#bundler
-gem 'bundler'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -44,8 +33,18 @@ gem 'bundler'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'rspec-rails', '~> 3.4'
+  gem 'capybara'
+  gem 'rspec-core'
+  gem 'factory_girl_rails'
+  gem 'devise'
+  gem 'rspec-expectations'
+  gem 'rspec-mocks'
+  gem 'rspec-rails'
   gem 'launchy'
+  gem 'pry'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -54,7 +53,6 @@ group :development do
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'rspec-rails', '~> 3.4'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
